@@ -1,0 +1,29 @@
+\documentclass{report}
+\usepackage{graphicx}
+
+\title{A Report With an Image}
+\author{Jones McAwesome}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+Here is the introduction, we're going to put an image in the first section below...
+
+\section{A Section with 2-inch Image}
+Take a look at this image! Please note, for this to work you must have an image named {\bf sampleimage.jpg} (you can of course change the image name!)
+
+\includegraphics[width=2in]{sampleimage.jpg}
+
+
+\section{A Section with a Centered Image}
+This image is the same as the one above, but this time it is centered
+
+\begin{center}
+\includegraphics[width=2in]{sampleimage.jpg}
+\end{center}
+
+
+\end{document}
