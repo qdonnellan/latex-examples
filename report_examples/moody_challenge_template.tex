@@ -2,6 +2,17 @@
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancypagestyle{plain}{}
+\lhead{Team \#1234}
+\chead{Something Goes Here, Maybe}
+\rhead{Page: \thepage}
+
+\lfoot{Bottom Left}
+\cfoot{Bottom Center}
+\rfoot{Bottom Right, Awesome!}
 
 \title{Template For Moody Challenge Report}
 \author{Team \#1234}
@@ -12,7 +23,8 @@
 \tableofcontents
 
 \chapter{Summary}
-Add you summary here
+Add you summary here. Notice the header at the top of each page? You can change it by changing \texttt{lhead}, \texttt{rhead} etc. in the preamble (notice the commands for left-header, center-header, right-header, left-footer, center-footer, right-footer)
+
 
 \chapter{Restatement \& Justification of Assumptions}
 
@@ -32,6 +44,7 @@ Describe your design here
 
 \section{Model Justification}
 Include the justification for your model here. I'll also show you how to include citiations from the bibliography using \cite{lamport94} and \cite{donnellan14}. You may have to click the compile button more than once to update the citation links. The \{99\} in the bibliography just means ``reserve 2 decimal places for the reference number''; if you think you are going to have less than 10 references, you could change it to \{9\}
+
 
 \chapter{Discussion}
 
